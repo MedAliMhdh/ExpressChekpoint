@@ -1,0 +1,29 @@
+html
+
+    header
+        style 
+            include ../public/stylesheets/style.css
+    body
+        include ./header.pug 
+        div.bodyContainer
+            div.bodyContact   
+                
+                h1 contact us
+                div.contactContainer
+                    form
+                        input(type="text", placeholder="Name")
+
+                        input(type="text", placeholder="Family name") 
+
+                        select
+                            option(value="company") Who are you
+                            option(value="company") Company
+                            option(value="Individual") Individual
+
+                        textarea(cols="30", rows="4", placeholder="Type your message")
+
+                    div.adress
+                        img(src="https://3kpnuxym9k04c8ilz2quku1czd-wpengine.netdna-ssl.com/wp-content/uploads/2013/10/Screen-shot-2013-10-27-at-10.51.49-PM.png")
+                        div.adressTxt
+                            h4 Building number, street number 
+                            h4 city , Zipcode, Country
